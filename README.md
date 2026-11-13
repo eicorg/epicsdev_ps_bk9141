@@ -1,8 +1,6 @@
 # BK Precision 9141 PVAccess Server
 
-An `epicsdev` server for the three-output BK Precision 9141 power supply.
-SCPI commands follow the programming manual in
-[misc/9140_Series_programming_manual.pdf](misc/9140_Series_programming_manual.pdf).
+An EPICS PVAccess server for the three-output BK Precision 9141 power supply.
 
 ## Running
 
