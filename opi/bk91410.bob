@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <display version="2.0.0">
+    <name>BK Precision 9141</name>
+    <width>1140</width>
+    <height>850</height>
+    <widget type="label" version="2.0.0">
+      <name>title</name>
+      <x>20</x>
+      <y>10</y>
+      <width>330</width>
+      <height>30</height>
+      <text>BK Precision 9141</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Identification</name>
+      <x>370</x>
+      <y>14</y>
+      <width>510</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:Identification</pv_name>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>dateTime</name>
+      <x>900</x>
+      <y>14</y>
+      <width>220</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:dateTime</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Resource_lbl</name>
+      <x>20</x>
+      <y>50</y>
+      <width>80</width>
+      <height>24</height>
+      <text>Resource:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Resource</name>
+      <x>105</x>
+      <y>50</y>
+      <width>550</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:Resource</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Connected_lbl</name>
+      <x>715</x>
+      <y>50</y>
+      <width>90</width>
+      <height>24</height>
+      <text>Connected:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Connected</name>
+      <x>810</x>
+      <y>50</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:Connected</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>OutputPairing_lbl</name>
+      <x>860</x>
+      <y>50</y>
+      <width>65</width>
+      <height>24</height>
+      <text>Pairing:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>OutputPairing</name>
+      <x>930</x>
+      <y>50</y>
+      <width>190</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:OutputPairing</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>srvStatus_lbl</name>
+      <x>20</x>
+      <y>82</y>
+      <width>70</width>
+      <height>24</height>
+      <text>Server:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>srvStatus</name>
+      <x>95</x>
+      <y>82</y>
+      <width>1025</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:status</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>state_lbl</name>
+      <x>20</x>
+      <y>116</y>
+      <width>65</width>
+      <height>20</height>
+      <text>Run/Stop:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>server</name>
+      <x>90</x>
+      <y>116</y>
+      <width>110</width>
+      <height>20</height>
+      <pv_name>pva://bk9141:0:server</pv_name>
+      <items>
+        <item>Start</item>
+        <item>Stop</item>
+        <item>Clear</item>
+        <item>Exit</item>
+        <item>Started</item>
+        <item>Stopped</item>
+        <item>Exited</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>sleep_lbl</name>
+      <x>410</x>
+      <y>116</y>
+      <width>40</width>
+      <height>20</height>
+      <text>Sleep:</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>sleep</name>
+      <x>450</x>
+      <y>116</y>
+      <width>50</width>
+      <height>20</height>
+      <pv_name>pva://bk9141:0:sleep</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>cycleTime_lbl</name>
+      <x>510</x>
+      <y>116</y>
+      <width>50</width>
+      <height>20</height>
+      <text>Period:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>cycleTime</name>
+      <x>560</x>
+      <y>116</y>
+      <width>60</width>
+      <height>20</height>
+      <pv_name>pva://bk9141:0:cycleTime</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>hb_lbl</name>
+      <x>640</x>
+      <y>116</y>
+      <width>30</width>
+      <height>20</height>
+      <text>HB:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>HEARTBEAT</name>
+      <x>670</x>
+      <y>116</y>
+      <width>70</width>
+      <height>20</height>
+      <pv_name>pva://bk9141:0:HEARTBEAT</pv_name>
+      <format>1</format>
+      <precision>0</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>VERSION</name>
+      <x>770</x>
+      <y>116</y>
+      <width>350</width>
+      <height>20</height>
+      <pv_name>pva://bk9141:0:VERSION</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>LastError_lbl</name>
+      <x>20</x>
+      <y>148</y>
+      <width>80</width>
+      <height>24</height>
+      <text>Last error:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>LastError</name>
+      <x>105</x>
+      <y>148</y>
+      <width>1015</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:LastError</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>AllEnable_lbl</name>
+      <x>20</x>
+      <y>182</y>
+      <width>110</width>
+      <height>24</height>
+      <text>All outputs:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>AllEnable</name>
+      <x>135</x>
+      <y>182</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:AllEnable</pv_name>
+      <items>
+        <item>Off</item>
+        <item>On</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>AllEnableRBV_lbl</name>
+      <x>245</x>
+      <y>182</y>
+      <width>95</width>
+      <height>24</height>
+      <text>Readback:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>AllEnableRBV</name>
+      <x>345</x>
+      <y>182</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:AllEnableRBV</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>ClearStatus</name>
+      <x>850</x>
+      <y>180</y>
+      <width>270</width>
+      <height>28</height>
+      <pv_name>pva://bk9141:0:ClearStatus</pv_name>
+      <text>Clear error queue / status</text>
+      <actions>
+        <action type="write_pv">
+          <description>Clear error queue / status</description>
+          <pv_name>pva://bk9141:0:ClearStatus</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:title</name>
+      <x>20</x>
+      <y>232</y>
+      <width>340</width>
+      <height>28</height>
+      <text>Channel 1</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:MeasuredVoltage_lbl</name>
+      <x>20</x>
+      <y>270</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Voltage (V):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:MeasuredVoltage</name>
+      <x>185</x>
+      <y>270</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:MeasuredVoltage</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:MeasuredCurrent_lbl</name>
+      <x>20</x>
+      <y>300</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Current (A):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:MeasuredCurrent</name>
+      <x>185</x>
+      <y>300</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:MeasuredCurrent</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:MeasuredPower_lbl</name>
+      <x>20</x>
+      <y>330</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Power (W):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:MeasuredPower</name>
+      <x>185</x>
+      <y>330</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:MeasuredPower</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:set_lbl</name>
+      <x>165</x>
+      <y>375</y>
+      <width>85</width>
+      <height>24</height>
+      <text>Setpoint</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:rbv_lbl</name>
+      <x>265</x>
+      <y>375</y>
+      <width>85</width>
+      <height>24</height>
+      <text>Readback</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:Voltage_lbl</name>
+      <x>20</x>
+      <y>407</y>
+      <width>140</width>
+      <height>24</height>
+      <text>Voltage (V):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH1:Voltage</name>
+      <x>165</x>
+      <y>407</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:Voltage</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:VoltageRBV</name>
+      <x>265</x>
+      <y>407</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:VoltageRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:Current_lbl</name>
+      <x>20</x>
+      <y>439</y>
+      <width>140</width>
+      <height>24</height>
+      <text>Current limit (A):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH1:Current</name>
+      <x>165</x>
+      <y>439</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:Current</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:CurrentRBV</name>
+      <x>265</x>
+      <y>439</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:CurrentRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:OVP_lbl</name>
+      <x>20</x>
+      <y>471</y>
+      <width>140</width>
+      <height>24</height>
+      <text>OVP (V):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH1:OVP</name>
+      <x>165</x>
+      <y>471</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:OVP</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:OVPRBV</name>
+      <x>265</x>
+      <y>471</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:OVPRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:OCP_lbl</name>
+      <x>20</x>
+      <y>503</y>
+      <width>140</width>
+      <height>24</height>
+      <text>OCP (A):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH1:OCP</name>
+      <x>165</x>
+      <y>503</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:OCP</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:OCPRBV</name>
+      <x>265</x>
+      <y>503</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:OCPRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:Enable_lbl</name>
+      <x>20</x>
+      <y>548</y>
+      <width>125</width>
+      <height>24</height>
+      <text>Output:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CH1:Enable</name>
+      <x>150</x>
+      <y>548</y>
+      <width>100</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:Enable</pv_name>
+      <items>
+        <item>Off</item>
+        <item>On</item>
+      </items>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH1:EnableRBV</name>
+      <x>300</x>
+      <y>548</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH1:EnableRBV</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:OCPEnable_lbl</name>
+      <x>20</x>
+      <y>580</y>
+      <width>125</width>
+      <height>24</height>
+      <text>OCP enabled:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CH1:OCPEnable</name>
+      <x>150</x>
+      <y>580</y>
+      <width>100</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:OCPEnable</pv_name>
+      <items>
+        <item>Off</item>
+        <item>On</item>
+      </items>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH1:OCPEnableRBV</name>
+      <x>300</x>
+      <y>580</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH1:OCPEnableRBV</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:OVPTripped_lbl</name>
+      <x>20</x>
+      <y>618</y>
+      <width>210</width>
+      <height>24</height>
+      <text>OVP tripped:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH1:OVPTripped</name>
+      <x>300</x>
+      <y>618</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH1:OVPTripped</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="196" blue="45" green="45" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:OCPTripped_lbl</name>
+      <x>20</x>
+      <y>646</y>
+      <width>210</width>
+      <height>24</height>
+      <text>OCP tripped:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH1:OCPTripped</name>
+      <x>300</x>
+      <y>646</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH1:OCPTripped</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="196" blue="45" green="45" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH1:RegulationCondition_lbl</name>
+      <x>20</x>
+      <y>678</y>
+      <width>210</width>
+      <height>24</height>
+      <text>Regulation (raw):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH1:RegulationCondition</name>
+      <x>265</x>
+      <y>678</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH1:RegulationCondition</pv_name>
+      <format>1</format>
+      <precision>0</precision>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>CH1:ClearProtection</name>
+      <x>20</x>
+      <y>710</y>
+      <width>340</width>
+      <height>28</height>
+      <pv_name>pva://bk9141:0:CH1:ClearProtection</pv_name>
+      <text>Clear protection</text>
+      <actions>
+        <action type="write_pv">
+          <description>Clear protection</description>
+          <pv_name>pva://bk9141:0:CH1:ClearProtection</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:title</name>
+      <x>390</x>
+      <y>232</y>
+      <width>340</width>
+      <height>28</height>
+      <text>Channel 2</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:MeasuredVoltage_lbl</name>
+      <x>390</x>
+      <y>270</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Voltage (V):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:MeasuredVoltage</name>
+      <x>555</x>
+      <y>270</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:MeasuredVoltage</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:MeasuredCurrent_lbl</name>
+      <x>390</x>
+      <y>300</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Current (A):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:MeasuredCurrent</name>
+      <x>555</x>
+      <y>300</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:MeasuredCurrent</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:MeasuredPower_lbl</name>
+      <x>390</x>
+      <y>330</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Power (W):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:MeasuredPower</name>
+      <x>555</x>
+      <y>330</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:MeasuredPower</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:set_lbl</name>
+      <x>535</x>
+      <y>375</y>
+      <width>85</width>
+      <height>24</height>
+      <text>Setpoint</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:rbv_lbl</name>
+      <x>635</x>
+      <y>375</y>
+      <width>85</width>
+      <height>24</height>
+      <text>Readback</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:Voltage_lbl</name>
+      <x>390</x>
+      <y>407</y>
+      <width>140</width>
+      <height>24</height>
+      <text>Voltage (V):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH2:Voltage</name>
+      <x>535</x>
+      <y>407</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:Voltage</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:VoltageRBV</name>
+      <x>635</x>
+      <y>407</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:VoltageRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:Current_lbl</name>
+      <x>390</x>
+      <y>439</y>
+      <width>140</width>
+      <height>24</height>
+      <text>Current limit (A):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH2:Current</name>
+      <x>535</x>
+      <y>439</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:Current</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:CurrentRBV</name>
+      <x>635</x>
+      <y>439</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:CurrentRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:OVP_lbl</name>
+      <x>390</x>
+      <y>471</y>
+      <width>140</width>
+      <height>24</height>
+      <text>OVP (V):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH2:OVP</name>
+      <x>535</x>
+      <y>471</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:OVP</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:OVPRBV</name>
+      <x>635</x>
+      <y>471</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:OVPRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:OCP_lbl</name>
+      <x>390</x>
+      <y>503</y>
+      <width>140</width>
+      <height>24</height>
+      <text>OCP (A):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH2:OCP</name>
+      <x>535</x>
+      <y>503</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:OCP</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:OCPRBV</name>
+      <x>635</x>
+      <y>503</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:OCPRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:Enable_lbl</name>
+      <x>390</x>
+      <y>548</y>
+      <width>125</width>
+      <height>24</height>
+      <text>Output:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CH2:Enable</name>
+      <x>520</x>
+      <y>548</y>
+      <width>100</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:Enable</pv_name>
+      <items>
+        <item>Off</item>
+        <item>On</item>
+      </items>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH2:EnableRBV</name>
+      <x>670</x>
+      <y>548</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH2:EnableRBV</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:OCPEnable_lbl</name>
+      <x>390</x>
+      <y>580</y>
+      <width>125</width>
+      <height>24</height>
+      <text>OCP enabled:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CH2:OCPEnable</name>
+      <x>520</x>
+      <y>580</y>
+      <width>100</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:OCPEnable</pv_name>
+      <items>
+        <item>Off</item>
+        <item>On</item>
+      </items>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH2:OCPEnableRBV</name>
+      <x>670</x>
+      <y>580</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH2:OCPEnableRBV</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:OVPTripped_lbl</name>
+      <x>390</x>
+      <y>618</y>
+      <width>210</width>
+      <height>24</height>
+      <text>OVP tripped:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH2:OVPTripped</name>
+      <x>670</x>
+      <y>618</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH2:OVPTripped</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="196" blue="45" green="45" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:OCPTripped_lbl</name>
+      <x>390</x>
+      <y>646</y>
+      <width>210</width>
+      <height>24</height>
+      <text>OCP tripped:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH2:OCPTripped</name>
+      <x>670</x>
+      <y>646</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH2:OCPTripped</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="196" blue="45" green="45" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH2:RegulationCondition_lbl</name>
+      <x>390</x>
+      <y>678</y>
+      <width>210</width>
+      <height>24</height>
+      <text>Regulation (raw):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH2:RegulationCondition</name>
+      <x>635</x>
+      <y>678</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH2:RegulationCondition</pv_name>
+      <format>1</format>
+      <precision>0</precision>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>CH2:ClearProtection</name>
+      <x>390</x>
+      <y>710</y>
+      <width>340</width>
+      <height>28</height>
+      <pv_name>pva://bk9141:0:CH2:ClearProtection</pv_name>
+      <text>Clear protection</text>
+      <actions>
+        <action type="write_pv">
+          <description>Clear protection</description>
+          <pv_name>pva://bk9141:0:CH2:ClearProtection</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:title</name>
+      <x>760</x>
+      <y>232</y>
+      <width>340</width>
+      <height>28</height>
+      <text>Channel 3</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:MeasuredVoltage_lbl</name>
+      <x>760</x>
+      <y>270</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Voltage (V):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:MeasuredVoltage</name>
+      <x>925</x>
+      <y>270</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:MeasuredVoltage</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:MeasuredCurrent_lbl</name>
+      <x>760</x>
+      <y>300</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Current (A):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:MeasuredCurrent</name>
+      <x>925</x>
+      <y>300</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:MeasuredCurrent</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:MeasuredPower_lbl</name>
+      <x>760</x>
+      <y>330</y>
+      <width>150</width>
+      <height>24</height>
+      <text>Power (W):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:MeasuredPower</name>
+      <x>925</x>
+      <y>330</y>
+      <width>165</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:MeasuredPower</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:set_lbl</name>
+      <x>905</x>
+      <y>375</y>
+      <width>85</width>
+      <height>24</height>
+      <text>Setpoint</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:rbv_lbl</name>
+      <x>1005</x>
+      <y>375</y>
+      <width>85</width>
+      <height>24</height>
+      <text>Readback</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:Voltage_lbl</name>
+      <x>760</x>
+      <y>407</y>
+      <width>140</width>
+      <height>24</height>
+      <text>Voltage (V):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH3:Voltage</name>
+      <x>905</x>
+      <y>407</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:Voltage</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:VoltageRBV</name>
+      <x>1005</x>
+      <y>407</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:VoltageRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:Current_lbl</name>
+      <x>760</x>
+      <y>439</y>
+      <width>140</width>
+      <height>24</height>
+      <text>Current limit (A):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH3:Current</name>
+      <x>905</x>
+      <y>439</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:Current</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:CurrentRBV</name>
+      <x>1005</x>
+      <y>439</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:CurrentRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:OVP_lbl</name>
+      <x>760</x>
+      <y>471</y>
+      <width>140</width>
+      <height>24</height>
+      <text>OVP (V):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH3:OVP</name>
+      <x>905</x>
+      <y>471</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:OVP</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:OVPRBV</name>
+      <x>1005</x>
+      <y>471</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:OVPRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:OCP_lbl</name>
+      <x>760</x>
+      <y>503</y>
+      <width>140</width>
+      <height>24</height>
+      <text>OCP (A):</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>CH3:OCP</name>
+      <x>905</x>
+      <y>503</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:OCP</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:OCPRBV</name>
+      <x>1005</x>
+      <y>503</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:OCPRBV</pv_name>
+      <format>1</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:Enable_lbl</name>
+      <x>760</x>
+      <y>548</y>
+      <width>125</width>
+      <height>24</height>
+      <text>Output:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CH3:Enable</name>
+      <x>890</x>
+      <y>548</y>
+      <width>100</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:Enable</pv_name>
+      <items>
+        <item>Off</item>
+        <item>On</item>
+      </items>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH3:EnableRBV</name>
+      <x>1040</x>
+      <y>548</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH3:EnableRBV</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:OCPEnable_lbl</name>
+      <x>760</x>
+      <y>580</y>
+      <width>125</width>
+      <height>24</height>
+      <text>OCP enabled:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CH3:OCPEnable</name>
+      <x>890</x>
+      <y>580</y>
+      <width>100</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:OCPEnable</pv_name>
+      <items>
+        <item>Off</item>
+        <item>On</item>
+      </items>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH3:OCPEnableRBV</name>
+      <x>1040</x>
+      <y>580</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH3:OCPEnableRBV</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="155" blue="170" green="163" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:OVPTripped_lbl</name>
+      <x>760</x>
+      <y>618</y>
+      <width>210</width>
+      <height>24</height>
+      <text>OVP tripped:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH3:OVPTripped</name>
+      <x>1040</x>
+      <y>618</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH3:OVPTripped</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="196" blue="45" green="45" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:OCPTripped_lbl</name>
+      <x>760</x>
+      <y>646</y>
+      <width>210</width>
+      <height>24</height>
+      <text>OCP tripped:</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CH3:OCPTripped</name>
+      <x>1040</x>
+      <y>646</y>
+      <width>22</width>
+      <height>22</height>
+      <pv_name>pva://bk9141:0:CH3:OCPTripped</pv_name>
+      <labels_from_pv>false</labels_from_pv>
+      <off_label/>
+      <on_label/>
+      <off_color>
+        <color red="46" blue="87" green="139" alpha="255"/>
+      </off_color>
+      <on_color>
+        <color red="196" blue="45" green="45" alpha="255"/>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CH3:RegulationCondition_lbl</name>
+      <x>760</x>
+      <y>678</y>
+      <width>210</width>
+      <height>24</height>
+      <text>Regulation (raw):</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CH3:RegulationCondition</name>
+      <x>1005</x>
+      <y>678</y>
+      <width>85</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:CH3:RegulationCondition</pv_name>
+      <format>1</format>
+      <precision>0</precision>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>CH3:ClearProtection</name>
+      <x>760</x>
+      <y>710</y>
+      <width>340</width>
+      <height>28</height>
+      <pv_name>pva://bk9141:0:CH3:ClearProtection</pv_name>
+      <text>Clear protection</text>
+      <actions>
+        <action type="write_pv">
+          <description>Clear protection</description>
+          <pv_name>pva://bk9141:0:CH3:ClearProtection</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>instrCmdS_lbl</name>
+      <x>20</x>
+      <y>770</y>
+      <width>80</width>
+      <height>24</height>
+      <text>SCPI:</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>instrCmdS</name>
+      <x>105</x>
+      <y>770</y>
+      <width>1015</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:instrCmdS</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>instrCmdR_lbl</name>
+      <x>20</x>
+      <y>808</y>
+      <width>80</width>
+      <height>24</height>
+      <text>Reply:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>instrCmdR</name>
+      <x>105</x>
+      <y>808</y>
+      <width>1015</width>
+      <height>24</height>
+      <pv_name>pva://bk9141:0:instrCmdR</pv_name>
+    </widget>
+  </display>
